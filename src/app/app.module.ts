@@ -17,10 +17,11 @@ import { HomeComponent } from './components/home/home.component';
 
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
+import { HeroeComponent } from './components/heroe/heroe.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING ],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, HeroesComponent, AboutComponent ],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, HeroesComponent, AboutComponent, HeroeComponent],
   providers:[HeroesService],
   bootstrap:    [ AppComponent ]
 })
