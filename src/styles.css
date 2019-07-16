@@ -1,4 +1,16 @@
 /* Add application styles & imports to this file! */
+body{
+  padding-bottom: 50px;
+}
+
+.main-container{
+  margin-top: 20px;
+}
+
+.img-logo{
+  width: 120px;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
