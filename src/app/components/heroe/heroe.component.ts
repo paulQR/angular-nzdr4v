@@ -18,18 +18,5 @@ export class HeroeComponent implements OnInit {
         this.heroe = this._heroesService.getHeroe( params['id']);
          console.log( this.heroe );
       })
-    }
-
-    getImagen(casa: string):string{
-      //this.router.navigate(['/heroe', idx]);
-      strSRC = "";
-      if(casa=="Marvel"){
-        strSRC = "Marvel"
-      }else if(casa=="DC"){
-        strSRC = "DC";
-      }
-      console.log("strSRC: " + strSRC );
-      return strSRC;
-    }    
-
+    } 
 }

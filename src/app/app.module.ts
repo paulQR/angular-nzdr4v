@@ -19,9 +19,11 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 
+import { HeroesArrComponent } from './components/heroesarr/heroesarr.component';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING ],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, HeroesComponent, AboutComponent, HeroeComponent],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, HeroesComponent, AboutComponent, HeroeComponent, HeroesArrComponent],
   providers:[HeroesService],
   bootstrap:    [ AppComponent ]
 })
