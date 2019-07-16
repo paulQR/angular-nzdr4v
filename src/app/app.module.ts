@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { APP_ROUTING } from './app.routes';
 
 // servicios
-
+import { HeroesService } from './servicios/heroes.service';
 
 
 //componentes
@@ -21,6 +21,7 @@ import { AboutComponent } from './components/about/about.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING ],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, HeroesComponent, AboutComponent ],
+  providers:[HeroesService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
