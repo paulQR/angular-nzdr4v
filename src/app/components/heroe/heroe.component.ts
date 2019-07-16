@@ -1,5 +1,7 @@
 import{Component, OnInit} from '@angular/core';
 import{ActivatedRoute} from '@angular/router';
+import{ HeroesService} from '../../servicios/heroes.service';
+
 
 @Component({
   selector: 'app-heroe',
@@ -7,10 +9,27 @@ import{ActivatedRoute} from '@angular/router';
 })
 export class HeroeComponent implements OnInit {
 
-    constructor( private activateRoute: ActivatedRoute){
+    heroe:any = {};
+
+    constructor( private activateRoute: ActivatedRoute,
+                  private _heroesService: HeroesService){
       this.activateRoute.params.subscribe( params => {
-        console.log( params['id'] );
+       // console.log( params['id'] );
+        this.heroe = this._heroesService.getHeroe( params['id']);
+         console.log( this.heroe );
       })
     }
+
+    getImagen(casa: string):string{
+      //this.router.navigate(['/heroe', idx]);
+      strSRC = "";
+      if(casa=="Marvel"){
+        strSRC = "Marvel"
+      }else if(casa=="DC"){
+        strSRC = "DC";
+      }
+      console.log("strSRC: " + strSRC );
+      return strSRC;
+    }    
 
 }
