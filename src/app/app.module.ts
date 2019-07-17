@@ -19,11 +19,11 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 
-import { HeroesArrComponent } from './components/heroesarr/heroesarr.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,APP_ROUTING ],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, HeroesComponent, AboutComponent, HeroeComponent, HeroesArrComponent],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, HomeComponent, HeroesComponent, AboutComponent, HeroeComponent, BuscadorComponent],
   providers:[HeroesService],
   bootstrap:    [ AppComponent ]
 })
