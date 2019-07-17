@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
     }
 
     buscarHeroe(termino:string){
-      console.log(termino);
+      //console.log(termino);
+      // redireccionar al nuevo componente
     }
 }
