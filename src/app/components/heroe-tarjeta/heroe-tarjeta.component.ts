@@ -5,6 +5,7 @@ import{Component, OnInit} from '@angular/core';
   templateUrl: './heroe-tarjeta.component.html', 
 })
 export class HeroeTarjetaComponent implements OnInit {
+    heroe: any ={};
     constructor(){}
 
     ngOnInit(){
