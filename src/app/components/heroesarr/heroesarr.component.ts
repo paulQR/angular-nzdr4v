@@ -17,7 +17,7 @@ export class HeroesArrComponent implements OnInit {
        // this.heroes = this._heroesService.getHeroes();
         this.activateRoute.params.subscribe( params => {
         // console.log( params['id'] );
-          this.heroes = this._heroesService.getHeroe( params['termino']);
+          this.heroes = this._heroesService.buscarHeroes( params['termino']);
           console.log( this.heroes );
         })
 
