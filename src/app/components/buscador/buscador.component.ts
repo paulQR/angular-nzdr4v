@@ -6,10 +6,10 @@ import{ActivatedRoute} from '@angular/router';
 import{ HeroesService, Heroe} from '../../servicios/heroes.service';
 
 @Component({
-  selector: 'app-heroesarr',
-  templateUrl: './heroesarr.component.html', 
+  selector: 'app-buscador',
+  templateUrl: './buscador.component.html', 
 })
-export class HeroesArrComponent implements OnInit {
+export class BuscadorComponent implements OnInit {
     heroes:Heroe[] = [];
     constructor(private activateRoute: ActivatedRoute,
     private _heroesService:HeroesService){}
